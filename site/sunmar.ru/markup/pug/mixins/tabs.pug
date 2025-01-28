@@ -1,0 +1,6 @@
+mixin tabs(tabs)
+  .tab-container
+    .tabs
+      each tab, idx in tabs
+        a.tab(class=idx === 0 ? 'active' : '')= tab.region
+    .tab-panes

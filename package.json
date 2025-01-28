@@ -2,6 +2,7 @@
   "dependencies": {
     "accordion-js": "^3.4.0",
     "pug": "^3.0.3",
+    "swiper": "^11.2.1",
     "tabs": "^0.2.0"
   }
 }

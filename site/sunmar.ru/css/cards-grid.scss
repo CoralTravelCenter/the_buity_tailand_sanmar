@@ -1,0 +1,28 @@
+@import '../../common/css/sunmar/sunmar-fluid-mixins';
+
+section.cards-grid > article .contenu {
+	.cards-grid-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		.card {
+			display: flex;
+			@include property(gap, 32px);
+
+			> * {
+				flex: 1;
+			}
+
+			.visual img {
+				border-radius: 12px;
+			}
+
+			.text {
+				display: flex;
+				flex-direction: column;
+				@include property(gap, 20px);
+				justify-content: center;
+			}
+		}
+	}
+}

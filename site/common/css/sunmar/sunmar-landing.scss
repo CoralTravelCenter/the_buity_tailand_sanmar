@@ -1,8 +1,8 @@
-@import "../global-variables";
-@import "sunmar-variables";
-@import "../regular-mixins";
-@import "sunmar-fluid-mixins";
-@import "../layout";
+@import '../global-variables';
+@import 'sunmar-variables';
+@import '../regular-mixins';
+@import 'sunmar-fluid-mixins';
+@import '../layout';
 
 section.hero > article {
 	font-family: inherit;
@@ -24,7 +24,7 @@ section.hero > article {
 		flex-direction: column;
 
 		align-items: $container-align;
-		@include fontAndProperty($font_Size_Body, padding-block, 40px);
+		@include fontAndProperty($font_Size_Body, padding-block, 20px);
 		padding-inline: 80px;
 
 		@media (max-width: $mobile-breakpoint) {
@@ -46,42 +46,27 @@ section.hero > article {
 
 	h1 {
 		@include font($font_Size_Heading_1);
-		@include setLineHeight(
-			$font_Line_Height_Heading_1,
-			$font_Size_Heading_1
-		);
+		@include setLineHeight($font_Line_Height_Heading_1, $font_Size_Heading_1);
 	}
 
 	h2 {
-			@include font($font_Size_Heading_2);
-			@include setLineHeight(
-				$font_Line_Height_Heading_2,
-				$font_Size_Heading_2
-		);
+		@include font($font_Size_Heading_2);
+		@include setLineHeight($font_Line_Height_Heading_2, $font_Size_Heading_2);
 	}
 
 	h3 {
 		@include font($font_Size_Heading_3);
-		@include setLineHeight(
-			$font_Line_Height_Heading_3,
-			$font_Size_Heading_3
-	);
+		@include setLineHeight($font_Line_Height_Heading_3, $font_Size_Heading_3);
 	}
 
 	h4 {
-				@include font($font_Size_Heading_4);
-			@include setLineHeight(
-				$font_Line_Height_Heading_4,
-				$font_Size_Heading_4
-		);
+		@include font($font_Size_Heading_4);
+		@include setLineHeight($font_Line_Height_Heading_4, $font_Size_Heading_4);
 	}
 
 	h5 {
 		@include font($font_Size_Heading_5);
-		@include setLineHeight(
-			$font_Line_Height_Heading_5,
-	$font_Size_Heading_5
-		);
+		@include setLineHeight($font_Line_Height_Heading_5, $font_Size_Heading_5);
 	}
 
 	p {

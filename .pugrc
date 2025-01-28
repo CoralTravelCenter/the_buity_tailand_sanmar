@@ -1,0 +1,20 @@
+{
+	"locals": {
+		"tabs": [
+			{
+				"region": "Пхукет",
+				"slides": [
+					"slide1",
+					"slide2"
+				]
+			},
+			{
+				"region": "Паттайя",
+				"slides": [
+					"slide1",
+					"slide2"
+				]
+			}
+		]
+	}
+}

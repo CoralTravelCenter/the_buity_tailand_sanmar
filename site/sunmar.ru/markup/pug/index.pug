@@ -1,0 +1,9 @@
+include ./mixins/tabs.pug
+
+link(rel="stylesheet" href="../../css/info-block.scss")
+section.hero.info-block
+  article
+    .contenu
+      h2 Уникальные туры по Таиланду
+      +tabs(tabs)
+script(type="module" src="../../js/tabs.js")

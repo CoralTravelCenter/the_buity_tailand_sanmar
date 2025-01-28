@@ -1,5 +1,5 @@
-@import "../../common/css/sunmar/sunmar-fluid-mixins";
-@import "../../common/css/global-variables";
+@import '../../common/css/sunmar/sunmar-fluid-mixins';
+@import '../../common/css/global-variables';
 
 section.kv > article .contenu {
 	.kv-main-banner {
@@ -62,7 +62,11 @@ section.kv > article .contenu {
 			}
 
 			h1 {
-				@include font(56px);
+				font-size: 3em !important;
+				font-weight: 300 !important;
+				width: 60%;
+				margin-bottom: 0.6em;
+				line-height: 1 !important;
 				@media (max-width: 768px) {
 					margin-top: 0;
 					@include font(32px);
@@ -74,7 +78,9 @@ section.kv > article .contenu {
 			}
 
 			p.slogan {
-				font-size: 1em;
+				@include font(24px);
+				line-height: 1.3;
+				width: 40%;
 			}
 
 			p.erid {
