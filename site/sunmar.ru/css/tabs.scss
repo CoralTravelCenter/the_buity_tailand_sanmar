@@ -1,0 +1,47 @@
+@import '../../common/css/sunmar/sunmar-fluid-mixins';
+
+section.info-block > article .contenu {
+	.tab-panes .tab-pane {
+		display: none;
+	}
+	.tab-panes .active {
+		display: block;
+	}
+
+	h2 {
+		@include property(margin-top, 20px);
+	}
+
+	.tabs {
+		display: flex;
+		@include property(padding-block, 40px);
+
+		> * {
+			flex: 1;
+		}
+	}
+
+	.tab {
+		@include property(border-top-left-radius, 56px);
+		@include property(border-bottom-left-radius, 56px);
+		background: #fff;
+		@include property(padding, 16px);
+		text-align: center;
+		color: #000;
+		text-decoration: none;
+		border: 1px solid #f8f8f8;
+	}
+
+	.tab:last-child {
+		@include property(border-top-right-radius, 56px);
+		@include property(border-bottom-right-radius, 56px);
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.tab.active {
+		background: #0e2855;
+		color: #fff;
+		border: none;
+	}
+}

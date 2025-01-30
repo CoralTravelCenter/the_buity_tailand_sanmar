@@ -1,0 +1,28 @@
+include acc.pug
+
+mixin slider(slides)
+  each slide in slides
+    .swiper-slide
+      .top-block
+        .text
+          h3= slide.place
+          p= slide.time
+          span(class="price")= slide.price
+            span(class="tippy-trigger")
+        .visual
+          .custom-nav-wrapper
+              .custom-nav-button.custom-prev-button
+              .current-slide
+                strong(class="active-slide")
+                span= " / "
+                span(class="slides-length")
+              .custom-nav-button.custom-next-button 
+          img(src=slide.visual)
+      .text-block
+        each description in slide.description
+          p= description
+      .accordions-block
+        .accordion-container
+          +acc(slide.accordions)
+
+                

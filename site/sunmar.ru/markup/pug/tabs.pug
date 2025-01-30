@@ -1,0 +1,13 @@
+include slider.pug
+
+mixin tabs(tabs)
+  .tab-container
+    .tabs
+      each tab, idx in tabs
+        a.tab(class=idx === 0 ? 'active' : '')= tab.region
+    .tab-panes
+      each pane, idx in tabs
+        .tab-pane(class=idx === 0 ? 'active' : '')= pane.content
+          .swiper.regions-slider(data-slider=idx)
+            .swiper-wrapper
+              +slider(pane.slides)

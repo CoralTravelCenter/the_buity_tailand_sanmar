@@ -1,0 +1,29 @@
+mixin acc(accordions)
+	each accordion in accordions
+		.ac
+			h2
+				button(type="button" class="ac-trigger")= accordion.list_title
+			.ac-panel
+				if accordion.first_list_name
+					p= accordion.first_list_name
+
+				if accordion.first_list_items
+					ul
+						each item in accordion.first_list_items
+							li= item
+
+				if accordion.second_list_name
+					p= accordion.second_list_name
+
+				if accordion.second_list_items
+					ul
+						each item in accordion.second_list_items
+							li= item
+
+				if accordion.third_list_name
+					p= accordion.third_list_name
+
+				if accordion.third_list_items
+					ul
+						each item in accordion.third_list_items
+							li= item

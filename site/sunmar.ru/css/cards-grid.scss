@@ -4,10 +4,21 @@ section.cards-grid > article .contenu {
 	.cards-grid-wrapper {
 		display: flex;
 		flex-direction: column;
+		@include property(gap, 32px);
+
+		.card:nth-child(1) {
+			@media (max-width: 768px) {
+				flex-direction: column-reverse;
+			}
+		}
 
 		.card {
 			display: flex;
 			@include property(gap, 32px);
+
+			@media (max-width: 768px) {
+				flex-direction: column;
+			}
 
 			> * {
 				flex: 1;
