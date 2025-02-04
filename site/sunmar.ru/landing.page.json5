@@ -2,7 +2,7 @@
 	env: {
 		brand: 'sunmar-next',
 		cmsWidgetContainer: '<div>{{{ widget_markup }}}</div>',
-		cdnAssetsURL: '//b2ccdn.sunmar.ru/content/landing-pages/<название корневой папки>',
+		cdnAssetsURL: '//b2ccdn.sunmar.ru/content/landing-pages/the_buity_tailand',
 	},
 	contents: [
 		'/site/sunmar.ru/markup/global.html',

@@ -1425,7 +1425,7 @@ module.exports = {
 					},
 					{
 						place: "Шоу 'КОЛИЗЕЙ'",
-						visual: '/site/sunmar.ru/assets/kolizey.jpg',
+						visual: 'https://b2ccdn.sunmar.ru/content/landing-pages/the_buity_tailand/kolizey_new.jpg',
 						time: 'Без трансфера',
 						price: 'От 23 у.е.',
 						description: [
@@ -1455,7 +1455,7 @@ module.exports = {
 					},
 					{
 						place: 'Шоу дельфинов',
-						visual: '/site/sunmar.ru/assets/delphin.jpg',
+						visual: 'https://b2ccdn.sunmar.ru/content/landing-pages/the_buity_tailand/delphin_new.jpg',
 						time: 'Без трансфера',
 						price: 'От 19 у.е.',
 						description: [
@@ -1494,7 +1494,7 @@ module.exports = {
 					},
 					{
 						place: 'Посещение SPA DEYA',
-						visual: '/site/sunmar.ru/assets/deya.jpg',
+						visual: 'https://b2ccdn.sunmar.ru/content/landing-pages/the_buity_tailand/massage_new.jpg',
 						time: 'Без трансфера',
 						price: 'От 77 у.е.',
 						description: [
