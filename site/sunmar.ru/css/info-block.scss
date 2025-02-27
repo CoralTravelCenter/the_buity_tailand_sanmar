@@ -1,5 +1,11 @@
 @import "../../common/css/sunmar/sunmar-fluid-mixins";
 
+section.info-block {
+	@media (max-width: 768px) {
+		padding: 0 1rem;
+	}
+}
+
 section.info-block > article .contenu {
 	.tab-panes .tab-pane {
 		display: none;

@@ -1,5 +1,11 @@
 @import '../../common/css/sunmar/sunmar-fluid-mixins';
 
+section.cards-grid {
+	@media (max-width: 768px) {
+		padding: 0 1rem;
+	}
+}
+
 section.cards-grid > article .contenu {
 	.cards-grid-wrapper {
 		display: flex;
